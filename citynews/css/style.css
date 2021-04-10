@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background: #fff url(../images/background.png) repeat-x;
+}
+
+#container{
+    width: 750px;
+    margin: 0 auto;
+}
+
+#header{
+    height: 150px;
+    background: url(../images/top-details.png) no-repeat right;
+    padding-top: 25px;
+}
+
+.logo{
+    width: 152px;
+    height: 66px;
+    background: url(../images/logo.png) no-repeat center;
+    text-indent: -3000px;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#header ul{
+    margin-top: 30px;
+    background: #b10333;
+    float: left;
+}
+
+#header ul li{
+    float: left;
+}
+
+#header ul a{
+    font-size: 0.9em;
+    display: block;
+    padding: 0.5em 1.5em;
+    line-height: 2.1em;
+    text-decoration: none;
+    color: white;
+    background: url(../images/divisor.png) no-repeat left center;
+}
+
+#header ul .first a{
+    background: none;
+}
+
+#header ul a:hover{
+    color: #69001d;
+}
+
+body.home #navigation a#home,
+body.brazil #navigation a#brazil,
+body.international #navigation a#international,
+body.economy #navigation a#economy,
+body.health #navigation a#health,
+body.science #navigation a#science,
+body.pictures #navigation a#pictures{
+    color: #fff;
+    background: #de003e;
+    cursor: text;
+}
