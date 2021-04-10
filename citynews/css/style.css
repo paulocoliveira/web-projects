@@ -30,6 +30,15 @@ body{
 
 /*Configuring navigation bar*/
 
+a:link, a:visited{
+    color: #b10333;
+    padding: 2px;
+}
+
+a:hover{
+    color: #e50040;
+}
+
 ul{
     margin: 0;
     padding: 0;
@@ -170,6 +179,60 @@ input.submit{
     margin-top: 3px;
 }
 
+/*Configuring images*/
+img.main-image{
+    width: 98%;
+    margin-top: 10px;
+    border: 3px solid #dfdfdf;
+}
+
+h3{
+    text-transform: uppercase;
+    display: inline;
+    font-size: 0.9em;
+    padding: 3px;
+}
+
+.breaking-news h3{
+    background: #b10333;
+    color: #fff;
+}
+
+.last-interview h3{
+    background: #f795b1;
+}
+
+/*Configuring news list*/
+#news-list li{
+    padding: 2px;
+    border-bottom: 1px solid #ccc;
+    height: 62px;
+}
+
+#news-list li a img{
+    float: left;
+    margin: 5px
+}
+
+#news-list li a{
+    text-decoration: none;
+}
+
+#news-list li a h3{
+    font-size: 0.9em;
+    padding: 0;
+    color: #3e7ab9;
+}
+
+#news-list li a p{
+    font-size: 0.8em;
+    color: #000;
+}
+
+#news-list li:hover{
+    background: #eee;
+    cursor: pointer;
+}
 
 
 /*Configuring footer*/
