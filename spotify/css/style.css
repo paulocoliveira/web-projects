@@ -1,6 +1,7 @@
 /* Layout */
 html, body, #home{
     height: 100%;
+    overflow-x: hidden;
 }
 
 body{
@@ -71,6 +72,11 @@ nav.transparent-navbar{
     color: black;
 }
 
+.carousel-control-next, .carousel-control-prev{
+    width: 5%;
+    text-decoration: none;
+}
+
 /* Content Structure*/
 #services{
     background: white;
@@ -82,8 +88,61 @@ nav.transparent-navbar{
     color: #7c25f8;
 }
 
+#features{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: white;
+}
+
+#features h2{
+    color: white;
+}
+
+#features h3{
+    color: #9df0e1;
+}
+
 .albums{
     padding: 10px 0;
+}
+
+.rotate{
+    -ms-transform: rotate(30deg);
+    -webkit-transform: rotate(30deg);
+    transform: rotate(30deg);
+    padding-left: 90px;
+}
+
+/* Footer */
+footer{
+    background: #000;
+    padding: 50px 0px 20px 0px;
+    position: relative;
+}
+
+footer h4{
+    color: #919496;
+    font-size: 0.9em;
+    text-transform: uppercase;
+}
+
+footer .navbar-nav a{
+    color: white;
+    font-size: 0.9em;
+    text-decoration: none;
+}
+
+footer .navbar-nav a:hover{
+    color: #9bf0e1;
+}
+
+footer ul{
+    list-style: none;
+}
+
+footer ul li{
+    float: right;
+    margin: 0px 5px;
 }
 
 
