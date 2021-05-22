@@ -1,7 +1,7 @@
 var height = 0
 var widht = 0
 var lives = 1
-var time = 10
+var time = 60
 
 function getStageSize(){
     widht = window.innerWidth
