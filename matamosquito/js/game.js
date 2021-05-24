@@ -2,6 +2,16 @@ var height = 0
 var widht = 0
 var lives = 1
 var time = 60
+var createMosquitoTime = 3000
+var level = window.location.search
+level = level.replace("?", "")
+if(level=="easy"){
+    createMosquitoTime = 3000
+}else if(level=="medium"){
+    createMosquitoTime = 2000
+}else if(level=="hard"){
+    createMosquitoTime = 1000
+}
 
 function getStageSize(){
     widht = window.innerWidth
@@ -74,3 +84,14 @@ function randomSide(){
             return "sideB"
     } 
 }
+
+function startGame(){
+    var level = document.getElementById("level").value
+    if (level == ''){
+        alert("Selectione um nível para iniciar o jogo.")
+        return false
+    }
+    window.location.href = "app.html?" + level
+}
+
+
