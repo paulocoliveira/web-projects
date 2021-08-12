@@ -1,0 +1,475 @@
+:root{
+    --color-primary: #ece9e5;
+    --color-secondary: #660000;
+    --color-complementary: #333329;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+/***************************************************************************
+*   HOME
+***************************************************************************/
+
+.home{
+    background-color: var(--color-primary)   
+}
+
+.home .header{
+    display: flex;
+    justify-content: center;
+}
+
+.home .header .nav{
+    display: flex;
+    align-items: center;
+}
+
+.home .header .nav .logo{
+    display: flex;
+    width: 110px;
+}
+
+.home .header .nav ul{
+    display: flex;
+    list-style: none;
+    margin-left: 20px;
+}
+
+.home .header .nav ul li{
+    display: flex;
+}
+
+.home .header .nav ul li a{
+    padding: 20px;
+    font-weight: 400;
+    color: var(--color-secondary);
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.home .header .nav ul li a:hover{
+    font-weight: bold;
+    border-bottom: 1px solid var(--color-complementary);
+}
+
+/***************************************************************************
+*   BANNER
+***************************************************************************/
+
+.banner{
+    
+}
+
+#homeCarousel h5,
+#homeCarousel p{
+    width: 90%;
+    height: 30px;
+    background:rgba(0, 0, 0, 0.6);
+    color: var(--color-primary);
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+@media (max-width: 1610px) {
+    #homeCarousel h5{
+        height: 50px;
+    }
+}
+
+/***************************************************************************
+*   FOOTER
+***************************************************************************/
+footer{
+    display: flex;
+    padding: 20px;
+    background-color: var(--color-primary);   
+    width: 100%;
+    justify-content: center;
+}
+
+footer ul{
+    list-style: none;
+}
+
+footer h4{
+    color: var(--color-complementary);
+    font-size: 14px;
+    font-weight: bold;
+}
+
+footer i{
+    color: #660000;
+    width: 25px;
+    margin: 0px 5px 0px 5px;
+    font-size: 1.1em;
+    text-align: center;
+}
+
+footer ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--color-secondary);
+    font-size: 12px;
+    font-weight: 400;
+}
+
+footer ul li span{
+    text-transform: uppercase;
+    color: var(--color-secondary);
+    font-size: 12px;
+    font-weight: 400;
+}
+
+footer .institucional{
+    width: 20%;
+}
+
+footer .fale-conosco{
+    width: 20%;
+}
+
+footer .onde-estamos{
+    width: 20%;
+}
+
+.address{
+    margin-left: 35px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.copyright{
+    display: flex;
+    padding: 0px;
+    background-color: var(--color-primary);   
+    width: 100%;
+    justify-content: center;
+}
+
+.copyright a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--color-secondary);
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.copyright a:hover{
+    font-weight: bold;
+    border-bottom: 1px solid var(--color-complementary);
+}
+
+.end{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+/***************************************************************************
+*   AREAS DE ATUAÇÃO
+***************************************************************************/
+
+.areas{
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.areas .boxes{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 30px;
+}
+
+.areas .boxes .box{
+    border-radius: 10px;
+    border: 1px solid var(--color-secondary);
+    box-shadow: 0 0 5px var(--color-secondary);
+    text-align: center;
+    width: 30%;
+    margin: 20px;
+    padding: 10px;
+}
+
+.areas .boxes .box ul li{
+    list-style: none;
+    font-size: 14px;
+    margin-bottom: 15px;    
+}
+
+.areas .boxes .box i{
+    font-size: 50px;
+    margin: 20px 0;
+    color: #b8860b;
+}
+
+.areas .boxes .box h4{
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    color: var(--color-secondary);
+}
+
+/***************************************************************************
+*   PORTFÓLIO
+***************************************************************************/
+
+.portfolio{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.portfolio img{
+    display: flex;
+    width: 150px;
+    margin: 0 auto;
+}
+
+.portfolio .boxes{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 30px;
+    margin-top: 0;
+}
+
+.portfolio .boxes .box{
+    text-align: center;
+    width: 20%;
+    margin: 20px;
+    padding: 10px;
+}
+
+.portfolio h2{
+    margin-top: 50px;
+    text-align: center;
+    font-size: 26px;
+    color: var(--color-secondary);
+}
+
+.portfolio h2:last-of-type{
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+/***************************************************************************
+*   EQUIPE
+***************************************************************************/
+
+.equipe{
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+.equipe img{
+    width: 70%;
+    border-radius: 10px;
+    border: 1px solid var(--color-secondary);
+    box-shadow: 0 0 5px var(--color-secondary);
+}
+
+.equipe h2{
+    font-size: 32px;
+    color: var(--color-secondary);
+}
+
+.equipe h3{
+    font-size: 20px;
+    margin-top: 10px;
+    color: var(--color-secondary);
+}
+
+.equipe p:first-of-type{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: var(--color-secondary);
+}
+
+.equipe p{
+    font-size: 18px;
+    color: var(--color-complementary);
+}
+
+.equipe .title{
+    display: flex;
+    justify-content: left;
+}
+
+.equipe .boxes .box i{
+    font-size: 50px;
+    margin-right: 20px;
+    color: #b8860b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.equipe .text{
+    display: flex;
+}
+
+.equipe .boxes{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 30px;
+    align-items: center;
+}
+
+.equipe .boxes .box{
+    text-align: justify;
+    width: 50%;
+    margin: 20px;
+    padding: 10px;
+}
+
+.equipe .boxes .box:first-child{
+    text-align: end;
+    width: 40%;
+}
+
+/***************************************************************************
+*   CONTATO
+***************************************************************************/
+
+.contato{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.contato h2{
+    text-transform: uppercase;
+    color: var(--color-secondary);
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+.contato h2:last-of-type{
+    padding: 0 0 20px 0;
+    
+}
+
+.contato .forms{
+    display: flex;
+}
+
+.contato .forms .email{
+    width: 50%;
+}
+
+.contato .forms label{
+    display: block;
+    font-size: 14px;
+    font-weight: 900;
+    color: var(--color-secondary);
+    margin-bottom: 1px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.contato .forms input, 
+.contato .forms textarea{
+    padding: 10px 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 90%;
+    border-radius: 3px;
+    border-color: var(--color-secondary);
+    outline: none;
+}
+
+.contato .forms .email textarea{
+    height: 100px;
+}
+
+.contato .forms .whatsapp textarea{
+    height: 220px;
+}
+
+.contato .forms button{
+    background-color: var(--color-secondary);
+    color: white;
+    padding: 15px 40px;
+    border: none;
+    margin-top: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    width: 90%;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.contato .forms .whatsapp{
+    width: 50%;
+}
+
+.contato .numbers .phones{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.contato .numbers .box .phones .info{
+    display: flex;
+}
+
+.contato .numbers .box .phones .info .icon{
+    color: var(--color-secondary);
+    width: 30px;
+    margin: 0px 5px 0px 5px;
+    font-size: 1.1em;
+    text-align: center;
+}
+
+.contato .numbers .box .phones .info .text{
+    display: block;
+    font-size: 1.1em;
+}
+
+.contato .localization .maps{
+    width: 100%;
+    padding: 20px;
+}
+
+.contato .localization .maps iframe{
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+
+/***************************************************************************
+*   POLÍTICAS
+***************************************************************************/
+
+.politicas{
+    width: 80%;
+    padding: 20px;
+    margin: 0 auto;
+    text-align: justify;
+}
+
+.politicas h2{
+    color: var(--color-secondary);
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+@media (min-width: 1610px) {
+    .politicas{
+        margin-bottom: 485px;
+    }
+}

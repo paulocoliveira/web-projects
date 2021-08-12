@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edson Barbosa Advocacia</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <section class="home">
+        <header class="header">
+            <nav class="nav">
+                <img class="logo" src="images/logo.png" alt="Edson Barbosa Advocacia">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="areas-de-atuacao.html">Área de Atuação</a></li>
+                    <li><a href="equipe.html">Equipe</a></li>
+                    <li><a href="portfolio.html">Portfólio</a></li>
+                    <li><a href="">Conteúdos</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </header>
+    </section>
+    <section class="contato">
+        <div class="boxes forms">
+            <div class="box email">
+                <h2>Contato por e-mail</h2>
+                <form action="https://formspree.io/f/mbjqknav" method="POST">
+                    <div class="personal-data">
+                        <div class="input-wrapper">
+                            <label>Nome</label>
+                            <input type="text" name="nome" id="nome" placeholder="Digite o seu nome">
+                        </div>
+                        <div class="input-wrapper">
+                            <label>E-mail</label>
+                            <input type="text" name="email" id="email" placeholder="Digite o seu e-mail">
+                        </div>
+                        <div class="input-wrapper">
+                            <label>Telefone</label>
+                            <input type="text" name="telefone" id="telefone"  placeholder="Digite o seu telefone">
+                        </div>
+                    </div>
+                    <div class="input-wrapper">
+                        <label>Mensagem</label>
+                        <textarea name="mensagem" id="mensagem" placeholder="Digite sua mensagem"></textarea>
+                    </div>
+                    <input type="hidden" name="_language" value="pt-BR" />
+                    <button>Enviar</button>
+                </form>
+            </div>
+            <div class="box whatsapp">
+                <h2>Contato por WhatsApp</h2>
+                <form id="whats-form">
+                    <div class="personal-data">
+                        <div class="input-wrapper">
+                            <label>Nome</label>
+                            <input type="text" id="whats-name" placeholder="Digite o seu nome">
+                        </div>
+                    </div>
+                    <div class="input-wrapper">
+                        <label>Mensagem</label>
+                        <textarea id="whats-message"></textarea>
+                    </div>
+                    <button onclick="createWhatsappLink()">Enviar</button>
+                </form>
+            </div>
+        </div>
+        <div class="boxes numbers">
+            <div class="box">
+                <h2>Contato por telefone</h2>
+                <div class="phones">
+                    <div class="info">
+                        <div class="icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div class="text">
+                            <span>(62) 98150-8924</span>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <div class="icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <div class="text">
+                            <span>(62) 3261-9170</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="boxes localization">
+            <div class="box maps">
+                <h2>Nosso Escritório</h2>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3822.2357449469373!2d-49.243435785002745!3d-16.665082449410747!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935ef22c8c2576c9%3A0xc8618a1908dd9075!2sR.%20207%2C%20198%20-%20St.%20Leste%20Vila%20Nova%2C%20Goi%C3%A2nia%20-%20GO%2C%2074640-110%2C%20Brazil!5e0!3m2!1sen!2spt!4v1624641290482!5m2!1sen!2spt" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="institucional">
+            <h4 class="mt-2">INSTITUCIONAL</h4>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="areas-de-atuacao.html">Áreas de Atuação</a></li>
+                <li><a href="equipe.html">Equipe</a></li>
+                <li><a href="portfolio.html">Portfólio</a></li>
+                <li><a href="">Conteúdos</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </div>
+        <div class="fale-conosco">
+            <h4 class="mt-2">FALE CONOSCO</h4>
+            <ul class="navbar-nav">
+                <li><i class="fas fa-phone-alt"></i><span>(62) 3333-3333</span></li>
+                <li><i class="fas fa-mobile-alt"></i><span>(62) 98150-8924</span></li>
+                <li><i class="fab fa-whatsapp"></i><a href="https://api.whatsapp.com/send?phone=5562981508924&text=Ol%C3%A1,%20tenho%20interesse%20nos%20servi%C3%A7os%20da%20empresa...">(62) 98150-8924</a></li>
+                <li><i class="far fa-envelope"></i><a href="mailto:contato@ebadvocacia.com.br">contato@ebadvocacia.com.br</a></li>
+                <li><i class="fab fa-facebook-square"></i><a href="https://www.facebook.com/ebadvocacia1">Facebook</a></li>
+            </ul>
+        </div>
+        <div class="onde-estamos">
+            <h4 class="mt-2">ONDE ESTAMOS</h4>
+            <ul class="navbar-nav">
+                <li><i class="fas fa-map-marker-alt"></i>Rua 207, nº 198, QD 13, LT 06</li>
+                <li class="address">Setor Leste Vila Nova</li>
+                <li class="address">Goiânia - GO</li>
+                <li class="address">CEP: 74640-110</li>
+            </ul>
+        </div>
+    </footer>
+    <div class="copyright">
+        <span>&copy; 2021 Edson Barbosa Advocacia - Todos os direitos reservados.</span>
+        <span> - <a href="politicas.html">POLÍTICAS DE PRIVACIDADE</a></span>
+    </div>
+    
+</body>
+</html>
