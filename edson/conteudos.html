@@ -70,7 +70,6 @@
                 <p>Você registrou sua marca e descobriu que uma nova empresa está usando o mesmo nome que a sua. Conheça seus direitos e saiba o que fazer imediatamente.</p>
                 <a href="http://www.google.com" target="_blank">Leia o artigo</a>
             </div>
-           
         </div>
     </section>
     <footer>
@@ -109,6 +108,17 @@
         <span>&copy; 2021 Edson Barbosa Advocacia - Todos os direitos reservados.</span>
         <span> - <a href="politicas.html">POLÍTICAS DE PRIVACIDADE</a></span>
     </div>
-    
+    <script>
+        var numItems = document.querySelectorAll('.box').length
+        var content = document.querySelector(".conteudos")
+        var height = window.screen.height   
+        if (height > 900){
+            if (numItems <= 3){
+                content.classList.add("add-margin1")
+            }else{
+                content.classList.add("add-margin2")
+            }
+        }
+    </script>
 </body>
 </html>
