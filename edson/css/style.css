@@ -584,7 +584,7 @@ footer .onde-estamos{
     width: 40%;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1050px) {
     .equipe{
         display: block;
         width: 90%;
