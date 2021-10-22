@@ -61,6 +61,85 @@ body{
 }
 
 /***************************************************************************
+*   NAVBAR
+***************************************************************************/
+
+#btn-menu-mobile{
+    display: none;
+}
+
+@media (max-width: 1000px) {
+    #menu{
+        /*display: none;*/
+        display: block;
+        position: absolute;
+        width: 100%;
+        top:70px;
+        right: 0;
+        background: var(--color-primary);
+        transition: .6s;
+        z-index: 1000;
+        height: 0px;
+        visibility: hidden;
+        overflow-y: hidden;
+    }
+
+    #main-menu.active #menu{
+        height: calc(100vh - 70px);
+        visibility: visible;
+        overflow-y: auto;
+    }
+
+    #menu li {
+        padding: 1rem 0;
+        margin: 0 1rem;
+        border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+    }
+
+    #btn-menu-mobile {
+        display: flex;
+        padding: .5rem 1rem;
+        font-size: 1rem;
+        border: none;
+        background: none;
+        cursor: pointer;
+        gap: .5rem
+    }
+
+    #hamb-menu {
+        display: block;
+        border-top: 2px solid;
+        width: 20px;
+    }
+
+    #hamb-menu::after, #hamb-menu::before {
+        content: "";
+        display: block;
+        width: 20px;
+        height: 2px;
+        background-color: currentColor;
+        margin-top: 5px;
+        transition: .3s;
+        position: relative;
+    }
+
+    #main-menu.active #hamb-menu {
+        border-top-color: transparent;
+    }
+
+    #main-menu.active #hamb-menu::before{
+        transform: rotate(135deg);
+    }
+
+    #main-menu.active #hamb-menu::after{
+        transform: rotate(-135deg);
+        top: -7px;
+    }
+
+}
+
+
+/***************************************************************************
 *   BANNER
 ***************************************************************************/
 
@@ -173,6 +252,38 @@ footer .onde-estamos{
     bottom: 0;
     width: 100%;
 }
+
+@media (max-width: 1000px) {
+
+    footer{
+        display: block;
+    }
+
+    footer .institucional{
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    footer .institucional ul li{
+        margin-left: 5px;
+    }
+
+    footer .fale-conosco{
+        width: 100%;
+        margin-top: 20px;
+    }
+    
+    footer .onde-estamos{
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .copyright{
+        display: block;
+        text-align: center;
+    }
+
+}
 /***************************************************************************
 *   AREAS DE ATUAÇÃO
 ***************************************************************************/
@@ -218,6 +329,26 @@ footer .onde-estamos{
     margin-bottom: 20px;
     color: var(--color-secondary);
 }
+
+@media (max-width: 1000px) {
+    .areas{
+        display: block;
+        width: 90%;
+    }
+    
+    .areas .boxes{
+        display: block;
+        margin: 00px;
+        width: 100%;
+    }
+
+    .areas .boxes .box{
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
 
 /***************************************************************************
 *   PORTFÓLIO
@@ -270,6 +401,35 @@ footer .onde-estamos{
     font-size: 18px;
     color: var(--color-secondary);
     margin-bottom: 30px;
+}
+
+@media (max-width: 1000px) {
+    .portfolio{
+        display: block;
+        width: 90%;
+    }
+    
+    .portfolio .boxes{
+        display: block;
+        margin: 00px;
+        width: 100%;
+    }
+
+    .portfolio .boxes .box{
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .portfolio p{
+        text-align: justify;
+        margin-bottom: 50px;
+    }
+
+    .portfolio h3{
+        font-size: 13px;
+        text-transform: uppercase;
+    }
 }
 
 
@@ -352,6 +512,33 @@ footer .onde-estamos{
     width: 40%;
 }
 
+@media (max-width: 1000px) {
+    .equipe{
+        display: block;
+        width: 90%;
+    }
+
+    .equipe .boxes{
+        width: 100%;
+        margin: 0px;
+    }
+
+    .equipe .boxes .box{
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .equipe .boxes .box img{
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .equipe .boxes .box:first-child{
+        width: 90%;
+        margin-top: 30px;
+    }
+}
+
 /***************************************************************************
 *   CONTEÚDOS
 ***************************************************************************/
@@ -430,6 +617,31 @@ footer .onde-estamos{
 
 .add-margin2{
     margin-bottom: 190px;
+}
+
+@media (max-width: 1000px) {
+    
+    .conteudos{
+        display: block;
+        width: 90%;
+    }
+
+    .conteudos h2{
+        text-align: center;
+        font-size: 16px;
+    }
+    
+    .conteudos .boxes{
+        display: block;
+        margin: 00px;
+        width: 100%;
+    }
+
+    .conteudos .boxes .box{
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 /***************************************************************************
@@ -540,6 +752,26 @@ footer .onde-estamos{
 .contato .localization .maps iframe{
     width: 100%;
     margin-bottom: 30px;
+}
+
+@media (max-width: 1000px) {
+    
+    .contato{
+        display: block;
+        width: 90%;
+    }
+   
+    .contato .boxes{
+        display: block;
+        margin: 00px;
+        width: 100%;
+    }
+
+    .contato .boxes .box{
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 

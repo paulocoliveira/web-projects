@@ -14,14 +14,16 @@
 
     <link rel="stylesheet" href="css/style.css">
 
-    <script src="js/script.js"></script>
 </head>
 <body>
     <section class="home">
         <header class="header">
-            <nav class="nav">
+            <nav class="nav" id="main-menu">
                 <img class="logo" src="images/logo.png" alt="Edson Barbosa Advocacia">
-                <ul>
+                <button id="btn-menu-mobile">
+                    Menu<span id="hamb-menu"></span>
+                </button>
+                <ul id="menu">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="areas-de-atuacao.html">Área de Atuação</a></li>
                     <li><a href="escritorio.html">O Escritório</a></li>
@@ -142,6 +144,7 @@
         <span>&copy; 2021 Edson Barbosa Advocacia - Todos os direitos reservados.</span>
         <span> - <a href="politicas.html">POLÍTICAS DE PRIVACIDADE</a></span>
     </div>
-    
+
+    <script src="js/script.js"></script>
 </body>
 </html>
